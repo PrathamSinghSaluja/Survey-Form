@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" i>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<style>
+    .center {
+  text-align: center;
+}
+
+.position{
+    margin: auto;
+  width: 45%;
+  padding: 10px;
+}
+
+
+input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.bl{
+    width:50%;
+    background-color: blue;
+    height:2px;
+    position: absolute;
+    
+    left:25%;
+}
+
+
+</style>
+
+</style>
+</head>
+<form name="f1" method="post" class="form-horizontal">
+        <div class="center">
+                <div class="form-group">
+                    <h1><strong>Survey</strong></h1>
+                <h4>We gather potential COVID-19 cases based on your answer to this survey.</br>
+                The symptoms and questions are informed by the United States's Centers for Disease</br>
+                Control and Prevention(CDC)</h4>
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">
+                            www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html</a>
+                </br>
+                </div>
+            </div>
+              
+            <div class="position">
+                <div class="form-group" >
+                   <h4><strong>Q1. Do you have any of the following symptoms?</strong></h4>
+                 <small>Fever,cough,and shortness of breath are the primary symptoms of COVID-19.Others may include</br>
+                        persistent pain/pressure in the chest,confusion or inability to arousa, and bluish lips/face.</small></br>
+                
+                    <input type="checkbox" name="Fever" value="Fever">
+                    <label for="Fever"> Fever</label><br>
+                    <input type="checkbox" name="Cough" value="Cough">
+                    <label for="Cough"> Cough</label><br>
+                    <input type="checkbox" name="Wet-Cough" value="Wet-Cough">
+                    <label for="Wet-Cough"> Wet Cough</label><br>
+                    <input type="checkbox" name="Shortness-of-breath" value="Shortness-of-breath">
+                    <label for="Shortness-of-breath"> Shortness of breath</label><br>
+                    <input type="checkbox" name="Headache" value="Headache">
+                    <label for="Headache">Headache</label><br>
+                    <input type="checkbox" name="Diarrhea" value="Diarrhea">
+                    <label for="Diarrhea">Diarrhea</label><br>
+                    <input type="checkbox" name="None-of-the-above" value="None-of-the-above">
+                    <label for="None-of-the-above">None of the above</label><br>
+                 </div>  
+            </div>
+            <div class="bl"></div>  
+        
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q2. If you have symptoms,approximately how many days ago did you begin developing symptoms?</strong></h4>
+            <small>Typically symptoms appear 2-14 days after exposure to the COVID-19.</small></br>
+            <select class="form-control form-control-sm" name="degree">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q3. Have you travelled to a known COVID-19 hotspot country in the last 14 days?</strong></h4>
+                <label><input type="radio" name="optradio" value="yes">Yes</label></br>
+                <label><input type="radio" name="optradio" value="no">No</label></br>
+                <label><input type="radio" name="optradio" value="not-sure">I'm not sure</label>
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q4. The average number of people you come in contact with daily?</strong></h4>
+                <label><input type="radio" name="optradio" value="1-5">1-5</label></br>
+                <label><input type="radio" name="optradio" value="6-20">6-20</label></br>
+                <label><input type="radio" name="optradio" value=">20">>20</label>
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q5. Select the nature of Quaritine?</strong></h4>
+                <label><input type="radio" name="optradio" value="full">Full Quaritine (Not leaving house at all)</label></br>
+                <label><input type="radio" name="optradio" value="partial">Partial Quaritine (leave house only for essentials)</label></br>
+                <label><input type="radio" name="optradio" value="no">No Quaritine (regularly going for work)</label>
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q6. Have you had any close contact with a person who is known to have COVID-19 in the last 14 days?</strong></h4>
+                <label><input type="radio" name="optradio" value="yes">Yes</label></br>
+                <label><input type="radio" name="optradio" value="not-sure">I'm not sure</label></br>
+                
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q7. What is your age?</strong></h4>
+            <input type="number" class="form-control" placeholder="Your answer">
+              
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q8. Street name where you live?</strong></h4>
+            <input type="text" class="form-control" placeholder="Your answer">
+              
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q9. City?</strong></h4>
+            <input type="text" class="form-control" placeholder="Your answer">
+              
+        </div>
+    </div>
+    <div class="bl"></div>
+
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q10. Pincode?</strong></h4>
+            <input type="number" class="form-control" placeholder="Your answer">
+              
+        </div>
+    </div>
+    <div class="bl"></div>
+
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Q11. Gender</strong></h4>
+                <label><input type="radio" name="optradio" value="female">Female</label></br>
+                <label><input type="radio" name="optradio" value="male">Male</label></br>
+                <label><input type="radio" name="optradio" value="other">Other</label></br>
+                <label><input type="radio" name="optradio" value="prefer">Prefer not to say</label>
+        </div>
+    </div>
+    <div class="bl"></div>
+
+    <div class="position">
+        <div class="form-group">
+            <h4><strong>Latitude</strong></h4>
+            <input type="number" class="form-control" >
+
+            <h4><strong>Longitude</strong></h4>
+            <input type="number" class="form-control"></br>
+          <button class="btn btn-primary">GIVE MY LOCATION</button> &nbsp;&nbsp;&nbsp; <small>Please press allow to autofill</small>
+    </div>
+</div>
+    <div class="bl"></div>
+
+    <div class="position">
+    <button type="submit" class="btn btn-primary" name="simple">SUBMIT</button>
+    </div>
+
+
+
+</form>
